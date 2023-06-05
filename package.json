@@ -4,7 +4,7 @@
   "description": "A slim interface for recording video and uncompressed audio using your browser.",
   "main": "index.js",
   "scripts": {
-    "start": "bun serve",
+    "start": "tsc --build && tsc --watch & node ./serve.js",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "serve": "npx serve --cors --ssl-key=key.pem --ssl-cert=cert.pem"

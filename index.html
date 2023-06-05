@@ -63,14 +63,17 @@
         <button class="btn" id="videoMonitorButton">Monitor Video On/Off</button>
 
         <button class="btn" id="audioMonitorButton">Monitor Audio On/Off</button>
+        <button class="btn" id="audioToggle">Toggle Mono/Stereo</button>
 
         <button class="btn" id="fullscreenButton">Enter/Exit Fullscreen</button>
 
-        <button class="btn" id="recordButton">Record</button>
+        <select id="recordingsSelect">
+            <!-- Options will be filled in with TypeScript -->
+        </select>
 
-        <button class="btn" id="stopButton">Stop Recording</button>
+        <button class="btn" id="recordButton">Start Recording</button>
 
-        <button class="btn" id="playbackButton">Playback</button>
+        <button class="btn" id="playbackButton" disabled>Playback</button>
 
         <button class="btn" id="downloadButton">Download</button>
     </div>

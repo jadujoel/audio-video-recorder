@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="index.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Recorder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .btn {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0066ff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0052cc;
+        }
+        select, input {
+            margin: 10px;
+            padding: 10px;
+        }
+        #videoMonitor {
+            width: 100%;
+            height: auto;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Recorder</h1>
+
+        <input type="text" id="name" placeholder="Name your recording">
+
+        <select id="videoInputSelect">
+            <!-- Options will be filled in with TypeScript -->
+        </select>
+
+        <select id="audioInputSelect">
+            <!-- Options will be filled in with TypeScript -->
+        </select>
+
+        <video id="videoMonitor" autoplay playsinline></video>
+
+        <div id="audioMonitor">
+            <!-- Audio monitor will be handled with TypeScript -->
+        </div>
+
+        <button class="btn" id="videoMonitorButton">Monitor Video On/Off</button>
+
+        <button class="btn" id="audioMonitorButton">Monitor Audio On/Off</button>
+
+        <button class="btn" id="fullscreenButton">Enter/Exit Fullscreen</button>
+
+        <button class="btn" id="recordButton">Record</button>
+
+        <button class="btn" id="stopButton">Stop Recording</button>
+
+        <button class="btn" id="playbackButton">Playback</button>
+
+        <button class="btn" id="downloadButton">Download</button>
+    </div>
+</body>
+</html>

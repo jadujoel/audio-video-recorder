@@ -1,0 +1,31 @@
+{
+  "name": "audio-video-recorder",
+  "version": "0.0.1",
+  "description": "A slim interface for recording video and uncompressed audio using your browser.",
+  "main": "index.js",
+  "scripts": {
+    "start": "bun serve",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npx serve --cors --ssl-key=key.pem --ssl-cert=cert.pem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadujoel/audio-video-recorder.git"
+  },
+  "keywords": [],
+  "author": "Joel Lof <jlof@evolution.com> (https://joellof.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jadujoel/audio-video-recorder/issues"
+  },
+  "homepage": "https://github.com/jadujoel/audio-video-recorder#readme",
+  "devDependencies": {
+    "@types/node": "20.2.5",
+    "mkcert": "1.5.1",
+    "typescript": "5.1.3"
+  },
+  "dependencies": {
+    "bun": "^0.6.7"
+  }
+}

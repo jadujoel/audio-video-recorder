@@ -1,0 +1,9 @@
+# EditorConfig is a file format that helps maintain consistent coding styles for multiple developers working on the same project.
+
+# Top-most EditorConfig file
+root = true
+
+# All files
+[*]
+indent_style = tab
+indent_size = 2
